@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp5
 {
-    class Program
+    class ejercicioICM
     {
         static void Main(string[] args)
         {
@@ -16,20 +16,20 @@ namespace ConsoleApp5
             Console.WriteLine("Ingrese su altura actual: ");
             double a = double.Parse(Console.ReadLine());
 
-            //hallar icm
-            double icm = p / (a * a);
+            //hallar imc
+            double imc = p / (a * a);
 
-            Console.WriteLine("Su indice de masa corporal es: " + icm);
+            Console.WriteLine("Su indice de masa corporal es: " + imc);
 
-            if (icm < 18.5)
+            if (imc < 18.5)
             {
                 Console.WriteLine("Usted se encuentra bajo peso");
             }
-            else if (18.5 <= icm && icm >= 24.9)
+            else if (18.5 <= imc && imc <= 24.9)
             {
                 Console.WriteLine("Usted se encuentra normal");
             }
-            else if (24.9<= icm && icm >= 29.9)
+            else if (24.9<= imc && imc <= 29.9)
             {
                 Console.WriteLine("Usted se encuentra en Sobre peso");
             }
